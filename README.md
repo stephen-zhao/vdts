@@ -1,4 +1,4 @@
-# vdts
+# vdts 🕐🕑⭕🕓
 
 vdts is a library and cli for verifying that items in a time series occur at
 regular time intervals.
