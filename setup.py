@@ -14,9 +14,9 @@ setuptools.setup(
     author='Stephen Zhao',
     author_email='mail@zhaostephen.com',
     
-    url='https://github.com/stephen-zhao/zhaostephen-vdts',
+    url='https://github.com/stephen-zhao/vdts',
     project_urls={
-        "Source": "https://github.com/stephen-zhao/zhaostephen-vdts",
+        "Source": "https://github.com/stephen-zhao/vdts",
     },
     
     license='MIT',
