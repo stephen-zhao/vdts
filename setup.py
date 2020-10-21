@@ -6,7 +6,7 @@ with open('README.md', 'r') as fh:
 setuptools.setup(
     name='zhaostephen-vdts',
     version='0.1.0',
-    description='A library and cli utility for validating that a list is a time series.',
+    description='A library and CLI for checking and reporting that a time series data occurs at regular intervals.',
     
     long_description=long_description,
     long_description_content_type='text/markdown',
