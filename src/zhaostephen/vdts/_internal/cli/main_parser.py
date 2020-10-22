@@ -2,8 +2,8 @@ import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
-from vdts._internal.exceptions import CliInvalidArgumentError
-from vdts.fuzzytimedelta import TIME_INTERVAL_CODES
+from zhaostephen.vdts._internal.exceptions import CliInvalidArgumentError
+from zhaostephen.vdts.fuzzytimedelta import TIME_INTERVAL_CODES
 
 
 @dataclass

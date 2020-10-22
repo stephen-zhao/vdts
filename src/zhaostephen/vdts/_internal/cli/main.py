@@ -2,12 +2,12 @@ from datetime import datetime
 import os
 import sys
 from typing import List, Optional
-from vdts._internal.cli.main_parser import parse_args
-from vdts._internal.exceptions import CliInvalidArgumentError
-from vdts.correspondence import get_correspondence_with_fuzzy_regular_timeseries
-from vdts.filesystem import extract_timeseries_from_directory
-from vdts.fuzzytimedelta import get_fuzzy_time_delta_from_time_interval_code
-from vdts.printer import get_string_from_time_interval_code
+from zhaostephen.vdts._internal.cli.main_parser import parse_args
+from zhaostephen.vdts._internal.exceptions import CliInvalidArgumentError
+from zhaostephen.vdts.correspondence import get_correspondence_with_fuzzy_regular_timeseries
+from zhaostephen.vdts.filesystem import extract_timeseries_from_directory
+from zhaostephen.vdts.fuzzytimedelta import get_fuzzy_time_delta_from_time_interval_code
+from zhaostephen.vdts.printer import get_string_from_time_interval_code
 
 
 PROGRAM_NAME = 'vdts'

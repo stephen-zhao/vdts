@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Generator, Generic, Iterable, Optional, TypeVar
-from vdts.fuzzytimedelta import FuzzyTimeDelta
+from zhaostephen.vdts.fuzzytimedelta import FuzzyTimeDelta
 
 
 CORRESPONDENCE_KINDS = [

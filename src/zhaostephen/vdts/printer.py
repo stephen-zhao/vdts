@@ -1,5 +1,5 @@
 from datetime import datetime
-from vdts.fuzzytimedelta import TIME_INTERVAL_CODES
+from zhaostephen.vdts.fuzzytimedelta import TIME_INTERVAL_CODES
 
 
 def get_string_from_time_interval_code(time_interval_code: str, t: datetime) -> str:
