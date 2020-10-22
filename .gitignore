@@ -1,11 +1,11 @@
 # General build artifacts
-/build
-/dist
-/*.egg-info
+build/
+dist/
+*.egg-info/
 
 # Python
-__pycache__
-.pytest_cache
+__pycache__/
+.pytest_cache/
 
 # VS Code
-.vscode
+.vscode/
