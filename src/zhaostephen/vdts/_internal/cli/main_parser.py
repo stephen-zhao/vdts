@@ -64,8 +64,6 @@ def parse_args(program_name: str, args: List[str]) -> CliMainArgs:
             'Input directory cannot be a file.',
         ))
     if not in_dir_path.is_dir():
-        print("Input directory is not a valid directory.")
-        argparser.print_usage()
         raise CliInvalidArgumentError(_create_invalid_arguments_msg(
             argparser,
             {'in_dir': parsed_args.in_dir},
