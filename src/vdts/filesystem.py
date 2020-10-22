@@ -1,14 +1,14 @@
 from datetime import datetime
-from datetime_matcher import DatetimeMatcher
 import os
 from pathlib import Path
 from typing import Dict
+from datetime_matcher import DatetimeMatcher
 
 
 def extract_timeseries_from_directory(dir_path: Path, file_pattern: str) -> Dict[datetime, str]:
     # Get list of files in directory
     files = list(file for file in os.listdir(str(dir_path)) if (dir_path / file).is_file())
-    
+
     # Extract the datetimes
     dtmatcher = DatetimeMatcher()
     timepoint_files = list((dtmatcher.extract_datetime(file_pattern, file), file) for file in files)

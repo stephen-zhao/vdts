@@ -1,7 +1,6 @@
 import argparse
 from dataclasses import dataclass
 from pathlib import Path
-import sys
 from typing import Dict, List, Optional
 from vdts._internal.exceptions import CliInvalidArgumentError
 from vdts.fuzzytimedelta import TIME_INTERVAL_CODES
@@ -17,7 +16,7 @@ class CliMainArgs:
 
 def _create_invalid_arguments_msg(argparser: argparse.ArgumentParser, argument_dict: Dict[str, str], details: Optional[str]) -> str:
     msg = []
-    
+
     if len(argument_dict) == 0:
         pass
     elif len(argument_dict) == 1:
@@ -27,14 +26,14 @@ def _create_invalid_arguments_msg(argparser: argparse.ArgumentParser, argument_d
         msg.append('Invalid arguments:')
         for arg_name, arg_val in argument_dict.items():
             msg.append(f'    {arg_name} = {arg_val}')
-    
+
     if len(argument_dict) > 0:
         msg.append('')
-    
+
     if details is not None:
         msg.append(details)
         msg.append('')
-    
+
     msg.append(argparser.format_usage())
 
     return '\n'.join(msg)

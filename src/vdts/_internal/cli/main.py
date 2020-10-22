@@ -24,7 +24,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     except CliInvalidArgumentError as e:
         sys.stderr.write('{}'.format(e))
         exit(1)
-    
+
     # Get the time delta
     fuzzy_interval = get_fuzzy_time_delta_from_time_interval_code(args.interval_code)
     # Get the time series
@@ -34,7 +34,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     if len(timeseries_files) == 0:
         print("No files from which a time series could be inferred exist in the provided directory.")
         exit(0)
-    
+
     end_time = datetime.now() if args.is_end_now else None
     for correspondence in get_correspondence_with_fuzzy_regular_timeseries(sorted(timeseries_files.keys()), fuzzy_interval, end_timepoint=end_time):
         # Display results to user as they come up

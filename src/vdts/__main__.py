@@ -1,5 +1,4 @@
 import sys
-
 from vdts._internal.cli.main import main as _main
 
 
