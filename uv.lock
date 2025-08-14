@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "datetime-matcher"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/72/78ccd65abf6f757a3f51d57b842e042ed0bf060a40936e75e8f48320f36f/datetime-matcher-0.2.1.tar.gz", hash = "sha256:abb9dd9876c72ca1fa0b7f7daee51764ce37903040a01aed624adc738742b13b", size = 17845, upload-time = "2022-01-26T08:31:35.751Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/a4/641e0affe25764256021d0f69877c377f1681c234968c6a5553bcbbce047/datetime_matcher-0.2.1-py3-none-any.whl", hash = "sha256:e6ca072a7104de3d67757297ac6974090006120f451ed43cb26c7ef0e64b1d57", size = 11566, upload-time = "2022-01-26T08:31:34.321Z" },
+]
+
+[[package]]
+name = "zhaostephen-vdts"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "datetime-matcher" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "datetime-matcher", specifier = ">=0.2.1" }]

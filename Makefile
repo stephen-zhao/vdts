@@ -2,16 +2,16 @@
 all: build
 
 test:
-	pytest -s
+	uv run pytest -s
 
 build:
-	python3 setup.py sdist bdist_wheel
+	uv build
 
 publish:
-	python3 -m twine upload dist/*
+	uv publish
 
 publish-test:
-	python3 -m twine upload --repository testpypi dist/*
+	uv publish --repository testpypi
 
 clean:
 	rm -rf ./build ./*.egg-info ./dist

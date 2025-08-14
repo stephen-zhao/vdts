@@ -1,0 +1,51 @@
+[project]
+name = "zhaostephen-vdts"
+version = "0.1.0"
+description = "A library and CLI for checking and reporting that time series data occurs at regular intervals."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.12"
+dependencies = [
+    "datetime-matcher>=0.2.1",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Stephen Zhao", email = "mail@zhaostephen.com" },
+]
+
+[project.urls]
+Homepage = "https://github.com/stephen-zhao/vdts"
+Source = "https://github.com/stephen-zhao/vdts"
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["zhaostephen.*"]
+
+[tool.setuptools.entry-points]
+console_scripts = [
+    "vdts=zhaostephen.vdts._internal.cli.main:main",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+]
