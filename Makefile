@@ -4,6 +4,9 @@ all: build
 test:
 	uv run pytest -s
 
+typecheck:
+	uv run mypy src
+
 build:
 	uv build
 
@@ -16,4 +19,4 @@ publish-test:
 clean:
 	rm -rf ./build ./*.egg-info ./dist
 
-.PHONY: all build publish publish-test clean test
+.PHONY: all build publish publish-test clean test typecheck

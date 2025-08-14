@@ -46,4 +46,14 @@ include = ["zhaostephen.*"]
 [tool.uv]
 dev-dependencies = [
     "pytest",
+    "mypy",
+    "types-python-dateutil",
 ]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = ["src"]
+ignore_missing_imports = false
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
