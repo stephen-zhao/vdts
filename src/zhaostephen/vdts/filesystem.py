@@ -1,11 +1,10 @@
 from datetime import datetime
 import os
 from pathlib import Path
-from typing import Dict
 from datetime_matcher import DatetimeMatcher
 
 
-def extract_timeseries_from_directory(dir_path: Path, file_pattern: str) -> Dict[datetime, str]:
+def extract_timeseries_from_directory(dir_path: Path, file_pattern: str) -> dict[datetime, str]:
     # Get list of files in directory
     files = list(file for file in os.listdir(str(dir_path)) if (dir_path / file).is_file())
 

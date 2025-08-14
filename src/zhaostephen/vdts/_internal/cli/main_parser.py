@@ -1,7 +1,7 @@
 import argparse
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Optional
 from zhaostephen.vdts._internal.exceptions import CliInvalidArgumentError
 from zhaostephen.vdts.fuzzytimedelta import TIME_INTERVAL_CODES
 
@@ -14,7 +14,7 @@ class CliMainArgs:
     file_pattern: str
 
 
-def _create_invalid_arguments_msg(argparser: argparse.ArgumentParser, argument_dict: Dict[str, str], details: Optional[str]) -> str:
+def _create_invalid_arguments_msg(argparser: argparse.ArgumentParser, argument_dict: dict[str, str], details: Optional[str]) -> str:
     msg = []
 
     if len(argument_dict) == 0:
@@ -51,7 +51,7 @@ def _create_argparser(program_name: str) -> argparse.ArgumentParser:
     return argparser
 
 
-def parse_args(program_name: str, args: List[str]) -> CliMainArgs:
+def parse_args(program_name: str, args: list[str]) -> CliMainArgs:
     argparser = _create_argparser(program_name)
     parsed_args = argparser.parse_args(args)
 
