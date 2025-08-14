@@ -45,5 +45,5 @@ include = ["zhaostephen.*"]
 
 [tool.uv]
 dev-dependencies = [
-    "pytest",
+    "pytest>=8.4.1",
 ]
