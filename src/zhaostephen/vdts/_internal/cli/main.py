@@ -1,7 +1,7 @@
 from datetime import datetime
 import os
 import sys
-from typing import List, Optional
+from typing import Optional
 from zhaostephen.vdts._internal.cli.main_parser import parse_args
 from zhaostephen.vdts._internal.exceptions import CliInvalidArgumentError
 from zhaostephen.vdts.correspondence import get_correspondence_with_fuzzy_regular_timeseries
@@ -13,7 +13,7 @@ from zhaostephen.vdts.printer import get_string_from_time_interval_code
 PROGRAM_NAME = 'vdts'
 
 
-def main(argv: Optional[List[str]] = None) -> int:
+def main(argv: Optional[list[str]] = None) -> int:
     program_name = PROGRAM_NAME if os.path.basename(sys.argv[0]) == '__main__.py' else None
     if argv is None:
         argv = sys.argv[1:]
