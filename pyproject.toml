@@ -28,6 +28,9 @@ authors = [
 Homepage = "https://github.com/stephen-zhao/vdts"
 Source = "https://github.com/stephen-zhao/vdts"
 
+[project.scripts]
+vdts = "zhaostephen.vdts._internal.cli.main:main"
+
 [build-system]
 requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"
@@ -38,11 +41,6 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["zhaostephen.*"]
-
-[tool.setuptools.entry-points]
-console_scripts = [
-    "vdts=zhaostephen.vdts._internal.cli.main:main",
-]
 
 [tool.uv]
 dev-dependencies = [
