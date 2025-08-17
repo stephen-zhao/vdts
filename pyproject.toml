@@ -47,6 +47,7 @@ include = ["zhaostephen.*"]
 dev-dependencies = [
     "bump-my-version>=1.2.1",
     "pytest>=8.4.1",
+    "uv>=0.8.11",
 ]
 
 [tool.bumpversion]
