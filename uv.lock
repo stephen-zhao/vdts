@@ -196,11 +196,11 @@ wheels = [
 
 [[package]]
 name = "datetime-matcher"
-version = "0.2.1"
+version = "0.5.6"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6c/72/78ccd65abf6f757a3f51d57b842e042ed0bf060a40936e75e8f48320f36f/datetime-matcher-0.2.1.tar.gz", hash = "sha256:abb9dd9876c72ca1fa0b7f7daee51764ce37903040a01aed624adc738742b13b", size = 17845, upload-time = "2022-01-26T08:31:35.751Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0a/ac/afe25578cb330575b92fd74f8d8328a45fdec439acbf0fca3128772a3144/datetime_matcher-0.5.6.tar.gz", hash = "sha256:1f36222b99762f695a7d0c2d7ef088160540befa7ac9b7dcae9cc5b0e1851d0d", size = 13877, upload-time = "2026-11-16T00:51:22.12Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/cb/a4/641e0affe25764256021d0f69877c377f1681c234968c6a5553bcbbce047/datetime_matcher-0.2.1-py3-none-any.whl", hash = "sha256:e6ca072a7104de3d67757297ac6974090006120f451ed43cb26c7ef0e64b1d57", size = 11566, upload-time = "2022-01-26T08:31:34.321Z" },
+    { url = "https://files.pythonhosted.org/packages/f8/1b/1566bc074d0ec8347eb3b850bccbae19341387f17831d5d70f1c7bada921/datetime_matcher-0.5.6-py3-none-any.whl", hash = "sha256:bafcee2cb6e67c44d1d541fc83e06751d2bab85bfb4760db1463313cb5bd6fed", size = 11038, upload-time = "2026-11-16T00:51:20.802Z" },
 ]
 
 [[package]]
@@ -567,7 +567,7 @@ wheels = [
 
 [[package]]
 name = "zhaostephen-vdts"
-version = "0.2.6"
+version = "0.2.7"
 source = { editable = "." }
 dependencies = [
     { name = "datetime-matcher" },
