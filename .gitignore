@@ -9,3 +9,9 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
